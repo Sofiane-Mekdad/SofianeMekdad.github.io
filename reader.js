@@ -16,6 +16,7 @@ button.addEventListener("click", function(e){
     state = "paused"
   }else{
     audio.play()
+    state = "played"
   }
   
 })
