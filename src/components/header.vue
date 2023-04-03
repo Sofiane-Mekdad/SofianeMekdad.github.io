@@ -6,12 +6,12 @@ export default {
 </script>
 
 <template>
-  <header>
+  <div>
     <h1>Appli meteo</h1>
     <p>
       Cette appli a pour but de lire la météo, rien de plus.
     </p>
-  </header>
+  </div>
 </template>
 
 <style scoped>

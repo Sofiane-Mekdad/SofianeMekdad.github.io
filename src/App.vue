@@ -14,15 +14,18 @@ export default {
 
 <template>
   <div class="app">
-    <Header/>
+    <header>
+      <Header/>
+    </header>
     <Body ref="test"/>
   </div>
 </template>
 
 <style scoped>
   Header{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    display: block;
+    margin-left : auto;
+    margin-right: auto; 
+    width: 300px;
   }
 </style>
