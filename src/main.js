@@ -22,6 +22,8 @@ navigator.geolocation.getCurrentPosition((a)=>{
       app.$refs.test.hourly.snowfall[i] = jsonData.hourly.snowfall[i]
       app.$refs.test.hourly.temperature[i] = jsonData.hourly.temperature_2m[i]
       app.$refs.test.hourly.time[i] = jsonData.hourly.time[i]
+
+      app.$refs.personalgraph.datas[i] = jsonData.hourly.temperature_2m[i]
     }
 
     for(let i = 0; i<jsonData.daily.time.length; i++){

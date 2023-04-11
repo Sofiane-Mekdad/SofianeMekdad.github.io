@@ -1,8 +1,9 @@
 <script>
 import Header from './components/header.vue'
 import Body from './components/body.vue'
+import Graph from "./components/graph.vue"
 export default {
-  components : {Header, Body},
+  components : {Header, Body, Graph},
 
   methods : {
     returnRef(){
@@ -18,6 +19,7 @@ export default {
       <Header/>
     </header>
     <Body ref="test"/>
+    <Graph ref="personalgraph"/>
   </div>
 </template>
 
