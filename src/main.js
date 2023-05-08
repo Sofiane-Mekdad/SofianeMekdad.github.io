@@ -23,7 +23,7 @@ navigator.geolocation.getCurrentPosition((a)=>{
       app.$refs.test.hourly.temperature[i] = jsonData.hourly.temperature_2m[i]
       app.$refs.test.hourly.time[i] = jsonData.hourly.time[i]
 
-      app.$refs.personalgraph.datas[i] = jsonData.hourly.temperature_2m[i]
+      app.$refs.chart.datas[i] = jsonData.hourly.temperature_2m[i]
     }
 
     for(let i = 0; i<jsonData.daily.time.length; i++){
@@ -36,13 +36,3 @@ navigator.geolocation.getCurrentPosition((a)=>{
   req.send()
 
 }, ()=>{console.log("fail")})
-
-function toDate(timeFromAPI){
-  return new Date(timeFromAPI*1000)
-}
-
-function getCuttedHour(){
-  
-  let now = Date.now()
-  return now - now%(3600*1000)
-}

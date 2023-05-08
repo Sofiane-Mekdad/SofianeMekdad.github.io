@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calculator</title>
+</head>
+<body>
+  <input id="input" type="text" value="(2+1)*max(PI,2)*2"></input>
+  <button id="button">calculate</button>
+  <span id="result"></span>
+  <script type="module">
+    import {Calculator} from "./calculator.js"
+
+    function calculate(){
+      console.log(Calculator)
+      let result 
+
+      try {
+        result = Calculator.calculate(document.getElementById("input").value)
+      
+      } catch 
+      {
+        result = "ERROR"
+      }
+      document.getElementById("result").innerText = result
+    }
+
+    document.getElementById("button").addEventListener("click", calculate)
+  </script>
+</body>
+</html>
