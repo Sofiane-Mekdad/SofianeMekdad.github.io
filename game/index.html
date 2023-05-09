@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    *{
+      box-sizing: border-box;
+    }
+
+    .canvas{
+      position:absolute;
+      border: solid black 3px;
+      background-image: url("/background.png");
+    }
+
+    .canvas-div{
+      display: inline-block;
+      position: relative;
+      width: 900px;
+      height: 900px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+
+    #hud{
+      width: 900px;
+      height: 900px;
+      position: absolute;
+      margin: 3px;
+      pointer-events: none;
+    }
+
+    *{
+      color : white
+    }
+
+    button{
+      color:black
+    }
+  </style>
+  <script type="module" crossorigin src="./assets/index-2b3360bd.js"></script>
+  <link rel="stylesheet" href="./assets/index-52e40b8c.css">
+</head>
+<body>
+
+
+  
+  <div width="900" height="900" class="canvas-div">
+    <canvas class="canvas" width="900" height="900" id="canvas"></canvas>
+    <div id="hud"></div>
+  </div>
+
+  note : en cas d'erreur après le build, ajouter "./" dans les liens
+</body>
+</html>
