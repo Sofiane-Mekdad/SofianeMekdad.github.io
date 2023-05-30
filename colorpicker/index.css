@@ -1,0 +1,23 @@
+:root{
+  --colorOne : #999999;
+  --colorTwo : #999999;
+  --test : 10;  
+}
+
+
+button{
+  background-color: var(--colorTwo);
+  border-color: var(--colorOne);
+}
+
+div {
+  container-name: div;
+  container-type: normal;
+}
+
+@container div style(--test: 10) {
+  em {
+    display : none;
+  }
+
+}
