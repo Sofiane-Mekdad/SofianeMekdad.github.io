@@ -1,15 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meteo apli</title>
-  </head>
-  <body>
-    <div style="display: none;" id="app"></div>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="module" src="/src/main.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <title>cv</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="wrapper">
+    <div class="blueTriangle"></div>
+    <div class="orangeTriangle"></div>
+    <aside>
+      <ul id="personnalinfo">
+        <li> <img src="./icons/house.svg" alt="Adresse" class="icon">Adresse</li>
+        <li><img src="./icons/calendar2.svg" alt="Age" class="icon">Age</li>
+        <li><img src="./icons/mail.svg" alt="Adresse mail" class="icon">Adresse mail</li>
+        <li><img src="./icons/phone.svg" alt="téléphone" class="icon">Telephone</li>
+        <li><img src="./icons/id.svg" alt="permis" class="icon">Permis en cours</li>
+      </ul>
+
+      <section>
+        <h3>Savoir-être</h3>
+        <ul>
+          <li>Autonomie</li>
+          <li>Curiosité</li>
+          <li>Esprit de synthèse</li>
+          <li>Etre à l'écoute</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Langues</h3>
+        <article>
+          <h4>Francais</h4>
+          <p>Langue maternelle.</p>
+        </article>
+
+        <article>
+          <h4>Anglais</h4>
+          <p>Usage de l'anglais au quotidien.</p>
+        </article>
+
+        <article>
+          <h4>Italien</h4>
+          <p>Italien langue vivante 2 au lycée.</p>
+        </article>
+      </section>
+
+      <section>
+        <h3>Centre d'intérêt</h3>
+        <ul>
+          <li>Programmation en autodidacte</li>
+          <li>Modélisation 3D en autodidacte</li>
+          <li>Jeux vidéos</li>
+        </ul>
+      </section>
+    </aside>
+    <main>
+      <h1>NOM PRENOM</h1>
+      <h2 class="colored">Stage en développement web</h2>
+      <p>
+        Je souhaiterais obtenir une première expérience professionnelle dans le domaine du développement
+      </p>
+
+      <h3 class="colored">
+        Compétences
+      </h3>
+      <ul>
+        <li>
+          <strong>Sociales</strong>
+          <ul>
+            <li>Sensibiliser un public.</li>
+            <li>Accueillir, orienter des personnes</li>
+            <li>Concevoir des animations selon les types de publics</li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>Numériques</strong>
+          <ul>
+            <li>HTML/CSS et Javascript</li>
+            <li>Wordpress</li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>Commerciales</strong>
+          <ul>
+            <li>Technique de mise en rayon</li>
+          </ul>
+        </li>
+      </ul>
+
+      <section>
+
+        <h3>Expériences professionnelles</h3>
+        <div class="timelineDiv">
+
+          <article>
+            <h4>Employé libre service bénévole</h4>
+            <p class="info">Depuis aout 2023 <span class="colored">Episol 59</span> Guesnain</p>
+            <ul>
+              <li>Mise en rayon des produits.</li>
+              <li>Accompagnement le chauffeur en enlèvement.</li>
+              <li>Remplissage certains documents relatifs à l'hygiène.</li>
+            </ul>
+          </article>
+
+          <article>
+            <h4>Médiateur numérique stagiaire</h4>
+            <p class="info">Avril 2023 <span class="colored">AFAD du douaisis</span> Douais</p>
+            <ul>
+              <li>Assurer la maintenance des ordinateur (niveau 1).</li>
+              <li>Animer des atelier.</li>
+              <li>Réaliser des ressource pour les ateliers.</li>
+            </ul>
+          </article>
+
+          <article>
+            <h4>Employé libre service stagiaire</h4>
+            <p class="info">De février 2023 à mars 2023 <span class="colored">Sogusted Carrefour city</span> Douai</p>
+            <ul>
+              <li>Assurer la mise en rayon et l'étiquetage des produits.</li>
+            </ul>
+          </article>
+
+          <article>
+            <h4>Employé libre service bénévole</h4>
+            <p class="info">De juillet 2022 à avril 2023 <span class="colored">Episol 59</span> Guesnain</p>
+            <ul>
+              <li>Mise en rayon des produits.</li>
+              <li>Accompagnement le chauffeur en enlèvement.</li>
+              <li>Remplissage certains documents relatifs à l'hygiène.</li>
+            </ul>
+          </article>
+
+          <article>
+            <h4>Volontaire en service civique : ambassadeur du "bien vivre ensemble"</h4>
+            <p class="info">De juillet 2019 à février 2020 <span class="colored">Norevie</span> Douai</p>
+            <ul>
+              <li>Création de liens sociaux entre les locataires par la mise en place d'activités auprès des enfants et des personnes âgées.</li>
+              <li>Réalisation d'enquêtes de satisfaction au domicile des habitants.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
 
-  </body>
+      <section>
+        <h3>Diplômes et Formations</h3>
+        <div class="timelineDiv">
+          <article>
+            <h4>Baccalauréat Economique et social</h4>
+            <p class="info">2019 <span class="colored">Lycée Arthur Rimbaud</span> Sin le Noble</p>
+          </article>
+
+          <article>
+            <h4>MS developpeur front end</h4>
+            <p class="info">2023 <span class="colored">Greta Grand hainaut</span> Douai</p>
+            <ul>
+              <li>Utilisation d'un CMS</li>
+              <li>Apprentissage du HTML/CSS/Javascript</li>
+              <li>Gestion de projet en mode agile (méthode Kanban)</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
 </html>

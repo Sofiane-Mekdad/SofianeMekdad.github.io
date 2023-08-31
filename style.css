@@ -1,0 +1,142 @@
+*{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+html{/* activer uniquement pour centrer*/
+  /*width: 50vw;  
+  margin: auto;*/
+}
+
+:root{
+  --primary : rgb(124, 89, 47);
+  --secondary : rgb(92 113 133);
+  --tertiary : rgb(216 235 253);
+
+
+  --padding-top-section : 20vh;
+  --margin-after-title : 1vh;
+}
+
+#wrapper{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+aside{
+  width: 20vw;
+  padding-left: 20px;
+
+  background-color: var(--tertiary);
+  padding-top: var(--padding-top-section);
+}
+
+main{
+  width: 80vw;
+  padding-left: 50px;
+
+  padding-top: calc(var(--padding-top-section) - var(--margin-after-title));
+}
+h1{
+  margin-bottom: var(--margin-after-title);
+  font-size: 2em;
+}
+
+.blueTriangle{
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  border-top: 15vh solid var(--secondary);
+  border-right: 80vw solid transparent;
+}
+
+.orangeTriangle{
+  z-index: 3;
+  position: absolute;
+  right: 0;
+
+  border-top: 25vh solid var(--primary);
+  border-left: 55vw solid transparent;
+}
+
+:root {
+  --timelineDiv-padding :10px;
+  --timelineDiv-border :3px;
+  --article-point-size : 13px;
+  --article-point-top : 5px;
+}
+.timelineDiv{
+  padding: 0 var(--timelineDiv-padding);
+  border-left: var(--timelineDiv-border) solid black;
+}
+
+.timelineDiv > article::before{
+  content: "";
+  position: absolute;
+  margin-left: calc(var(--timelineDiv-padding)*-1 + var(--timelineDiv-border)/-2 + var(--article-point-size)/-2);
+  margin-top: var(--article-point-top);
+  width: var(--article-point-size);
+  height: var(--article-point-size);
+  background-color: black;
+  border-radius: 100%;
+}
+
+.timelineDiv > article
+{
+  margin-top: 20px;
+}
+
+h2{
+  font-size: 1.20em;
+}
+
+h3{
+  font-size: 1.5em;
+  margin :15px 0;
+}
+
+h4{
+  font-size: 1.25em;
+  margin: 5px 0;
+}
+
+li{
+  margin: 2px 0;
+}
+
+li > ul {
+  list-style-type: square;
+}
+
+p.info
+{
+  margin : 3px 0;
+}
+
+.colored{
+  color : var(--primary)
+}
+
+aside ul {
+  list-style-type: none;
+}
+
+aside ul{
+  padding-left: 0;
+}
+
+aside h3
+{
+  color : var(--secondary)
+}
+
+.icon{
+  width: 2em;
+  display: inline;
+  position: relative;
+  transform: translateY(25%);
+}
